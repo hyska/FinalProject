@@ -31,7 +31,8 @@ namespace WebAPI
         {
             services.AddControllers();
             //içinde data yoksa singleton kullanýlabilir 
-            //Autofac, Ninject,CastleWindsor, StructureMAp, LightInject, DryInject ---> IoC Container
+            //Autofac!!!, Ninject,CastleWindsor, StructureMAp, LightInject, DryInject ---> IoC Container
+            //AOP
             services.AddSingleton<IProductService,ProductManager>();
             services.AddSingleton<IProductDal, EfProductDal>();
         }
